@@ -1,6 +1,6 @@
 {
   "name": "tdna",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "透過 TDNA 營運 MCP 查詢協會資料、管理工作與建立報帳及內容草稿。",
   "author": {
     "name": "台灣數位遊牧者協會",

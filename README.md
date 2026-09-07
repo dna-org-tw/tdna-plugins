@@ -32,6 +32,12 @@ CLI 可用 `codex plugin marketplace add dna-org-tw/tdna-plugins` 加入來源�
 
 需要中斷連線時，登入 [TDNA 後台](https://admin.dna.org.tw/?page=mcp)，到「MCP 金鑰」撤銷該連線。撤銷後再次呼叫應要求重新授權。
 
+## 問題未解決時
+
+AI 判斷 TDNA 功能無法完成需求、資料不足或流程卡住時，會依 MCP 指引嘗試回報必要摘要到後台，供團隊改善；收到回報編號才表示送達。回報不包含整段對話或附件，摘要應去除個資及憑證。可告知 AI 不要回報。
+
+此功能需要 `write` scope 與可用的連線，並依賴 AI 客戶端遵循指引。回報成功不代表原問題已解決；秘書處與理事長可在「MCP 管理 → 問題回報」追蹤。既有使用者重新連線取得新增工具與伺服器指引；內附 Skill 自 0.1.2 同步提供。
+
 ## 其他 MCP 客戶端與 ChatGPT
 
 支援 OAuth／動態註冊的 MCP 客戶端，也可直接新增 `https://admin.dna.org.tw/mcp`，Transport 選 Streamable HTTP。
