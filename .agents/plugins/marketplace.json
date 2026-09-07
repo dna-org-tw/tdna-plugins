@@ -1,0 +1,20 @@
+{
+  "name": "tdna",
+  "interface": {
+    "displayName": "Tdna"
+  },
+  "plugins": [
+    {
+      "name": "tdna",
+      "source": {
+        "source": "local",
+        "path": "./plugins/tdna"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

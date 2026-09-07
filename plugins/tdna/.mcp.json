@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "tdna": {
+      "type": "http",
+      "url": "https://admin.dna.org.tw/mcp"
+    }
+  }
+}

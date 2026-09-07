@@ -1,0 +1,39 @@
+{
+  "name": "tdna",
+  "version": "0.1.0",
+  "description": "透過 TDNA 營運 MCP 查詢協會資料、管理工作與建立報帳及內容草稿。",
+  "author": {
+    "name": "台灣數位遊牧者協會",
+    "url": "https://dna.org.tw"
+  },
+  "homepage": "https://dna.org.tw",
+  "repository": "https://github.com/dna-org-tw/tdna-plugins",
+  "keywords": [
+    "tdna",
+    "協會營運",
+    "報帳",
+    "OAuth"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "TDNA 數遊會",
+    "shortDescription": "查詢協會資料、管理工作與建立報帳草稿",
+    "longDescription": "使用 Google OAuth 連接 TDNA 營運後台，依帳號既有角色查詢資料、管理工作與建立待確認草稿。金流與對外發布遵循後台確認規則。",
+    "developerName": "台灣數位遊牧者協會",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://dna.org.tw",
+    "defaultPrompt": [
+      "查詢我的角色與可以使用的 TDNA 功能。",
+      "整理本月活動與待辦，附上資料來源。",
+      "查詢我的報帳進度，不修改任何資料。"
+    ],
+    "brandColor": "#FFD028",
+    "logo": "./assets/logo.svg",
+    "logoDark": "./assets/logo-dark.svg"
+  }
+}
