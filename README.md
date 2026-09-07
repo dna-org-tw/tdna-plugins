@@ -1,4 +1,4 @@
-# TDNA 數遊會 Plugins
+# TDNA Plugins
 
 台灣數位遊牧者協會的 plugin 分發套件。提供協會資料查詢、工作管理及報帳與內容草稿功能，連接 TDNA 營運後台的 OAuth MCP。
 
@@ -12,7 +12,7 @@
 |Git ref|`main`|
 |Sparse paths|留空|
 
-新增後選擇 **Tdna** 來源，找到 **TDNA 數遊會** 並安裝。依提示使用自己的 Google 帳號登入、確認權限，然後在新對話使用。
+新增後選擇 **TDNA** 來源，找到 **TDNA** 並安裝。依提示使用自己的 Google 帳號登入、確認權限，然後在新對話使用。
 
 CLI 可用 `codex plugin marketplace add dna-org-tw/tdna-plugins` 加入來源，再回桌面介面安裝。
 
@@ -42,6 +42,10 @@ CLI 可用 `codex plugin marketplace add dna-org-tw/tdna-plugins` 加入來源�
 
 `plugins/tdna/.codex-plugin/plugin.json` 是 plugin manifest；`.mcp.json` 只包含服務網址，OAuth 憑證由客戶端管理。Skill 與品牌圖皆位於 plugin 內。
 
-更新後提高 plugin version，使用者可刷新 marketplace 後更新安裝。發布前確認未包含憑證、後台程式、個人資料或測試單據。
+日常功能與修正在固定的遠端 MCP 網址 `https://admin.dna.org.tw/mcp` 部署，既有工具的伺服器端更新不需要使用者下載或重新安裝 plugin。維持網址與既有工具介面相容；新增工具可能需要重新連線或開新對話，依客戶端重新取得工具清單的時機而定。
+
+名稱、圖示、內附 Skill 或連線設定屬於本機套件，更新這些內容時提高 plugin version。Git ref 使用 `main`；這代表來源追蹤分支，不保證客戶端會自動更新已安裝套件。目前官方文件未載明發布者可強制啟用套件自動更新的設定，因此不承諾所有客戶端都會自動取得這類變更。
+
+發布前確認未包含憑證、後台程式、個人資料或測試單據。
 
 套件結構依 [OpenAI plugin 文件](https://developers.openai.com/plugins/build/plugins)。
