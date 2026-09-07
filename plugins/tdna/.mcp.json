@@ -2,7 +2,7 @@
   "mcpServers": {
     "tdna": {
       "type": "http",
-      "url": "https://admin.dna.org.tw/mcp"
+      "url": "https://console.dna.org.tw/mcp"
     }
   }
 }

@@ -1,6 +1,6 @@
 ---
 name: tdna-operations
-description: 使用 TDNA 數遊會 MCP 查詢協會資料、專案、活動、待辦與報帳，或建立內容與金流草稿。使用者提到 TDNA 營運資料、協會工作或透過 TDNA 報帳時使用。
+description: 使用 TDNA MCP 查詢協會資料、專案、活動、待辦與報帳，或建立內容與金流草稿。使用者提到 TDNA 營運資料、協會工作或透過 TDNA 報帳時使用。
 ---
 
 # TDNA 營運

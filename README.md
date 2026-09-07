@@ -30,7 +30,7 @@ CLI 可用 `codex plugin marketplace add dna-org-tw/tdna-plugins` 加入來源�
 
 確認有實際 tool call，且回應 `via` 為 `oauth`。也可查詢 ehrsnet 報帳進度，比對同一筆申請編號；沒有可見單據時清單可為空。
 
-需要中斷連線時，登入 [TDNA 後台](https://admin.dna.org.tw/?page=mcp)，到「MCP 金鑰」撤銷該連線。撤銷後再次呼叫應要求重新授權。
+需要中斷連線時，登入 [TDNA 後台](https://console.dna.org.tw/?page=mcp)，到「MCP 金鑰」撤銷該連線。撤銷後再次呼叫應要求重新授權。
 
 ## 問題未解決時
 
@@ -40,7 +40,7 @@ AI 判斷 TDNA 功能無法完成需求、資料不足或流程卡住時，會�
 
 ## 其他 MCP 客戶端與 ChatGPT
 
-支援 OAuth／動態註冊的 MCP 客戶端，也可直接新增 `https://admin.dna.org.tw/mcp`，Transport 選 Streamable HTTP。
+支援 OAuth／動態註冊的 MCP 客戶端，也可直接新增 `https://console.dna.org.tw/mcp`，Transport 選 Streamable HTTP。
 
 此儲存庫提供 Git marketplace 與 bundled HTTP MCP，並非 OpenAI 公開目錄上架或 ChatGPT 工作區發布。若使用 ChatGPT 的已註冊 MCP 連線模式，須先在 Developer mode 建立連線，取得真實 `plugin_asdk_app…` 技術 ID，再用 `.app.json` 綁定；本套件未內嵌該 ID，也未聲稱已完成該模式的安裝。
 
@@ -48,7 +48,7 @@ AI 判斷 TDNA 功能無法完成需求、資料不足或流程卡住時，會�
 
 `plugins/tdna/.codex-plugin/plugin.json` 是 plugin manifest；`.mcp.json` 只包含服務網址，OAuth 憑證由客戶端管理。Skill 與品牌圖皆位於 plugin 內。
 
-日常功能與修正在固定的遠端 MCP 網址 `https://admin.dna.org.tw/mcp` 部署，既有工具的伺服器端更新不需要使用者下載或重新安裝 plugin。維持網址與既有工具介面相容；新增工具可能需要重新連線或開新對話，依客戶端重新取得工具清單的時機而定。
+日常功能與修正在固定的遠端 MCP 網址 `https://console.dna.org.tw/mcp` 部署，既有工具的伺服器端更新不需要使用者下載或重新安裝 plugin。維持網址與既有工具介面相容；新增工具可能需要重新連線或開新對話，依客戶端重新取得工具清單的時機而定。
 
 名稱、圖示、內附 Skill 或連線設定屬於本機套件，更新這些內容時提高 plugin version。Git ref 使用 `main`；這代表來源追蹤分支，不保證客戶端會自動更新已安裝套件。目前官方文件未載明發布者可強制啟用套件自動更新的設定，因此不承諾所有客戶端都會自動取得這類變更。
 
