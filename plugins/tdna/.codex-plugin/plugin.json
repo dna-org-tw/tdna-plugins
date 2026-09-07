@@ -1,6 +1,6 @@
 {
   "name": "tdna",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "透過 TDNA 營運 MCP 查詢協會資料、管理工作與建立報帳及內容草稿。",
   "author": {
     "name": "台灣數位遊牧者協會",
@@ -28,8 +28,8 @@
     ],
     "websiteURL": "https://dna.org.tw",
     "defaultPrompt": [
-      "查詢我的角色與可以使用的 TDNA 功能。",
-      "整理本月活動與待辦，附上資料來源。",
+      "登入 TDNA，確認我的帳號與角色。",
+      "重新登入 TDNA，我要切換帳號。",
       "查詢我的報帳進度，不修改任何資料。"
     ],
     "brandColor": "#FFD028",
