@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "台灣數位遊牧者協會的 plugin 分發套件，連接 TDNA 營運後台的 OAuth MCP。",
-    "version": "0.1.5"
+    "version": "0.1.7"
   },
   "plugins": [
     {
       "name": "tdna",
       "source": "./plugins/tdna",
       "description": "透過 TDNA 營運 MCP 查詢協會資料、管理工作與建立報帳及內容草稿。",
-      "version": "0.1.5",
+      "version": "0.1.7",
       "author": {
         "name": "台灣數位遊牧者協會",
         "url": "https://dna.org.tw"
