@@ -16,6 +16,17 @@
 
 CLI 可用 `codex plugin marketplace add dna-org-tw/tdna-plugins` 加入來源，再回桌面介面安裝。
 
+### Claude Code
+
+在 Claude Code 中執行：
+
+```
+/plugin marketplace add dna-org-tw/tdna-plugins
+/plugin install tdna@tdna
+```
+
+或在終端機執行 `claude plugin marketplace add dna-org-tw/tdna-plugins` 與 `claude plugin install tdna@tdna`。安裝後開新對話，首次呼叫 TDNA 工具時依提示完成 Google OAuth 授權（可用 `/mcp` 查看連線狀態）。Claude Code 讀取 `.claude-plugin/marketplace.json` 與 `plugins/tdna/.claude-plugin/plugin.json`，與 Codex 共用同一份 Skill 與 `.mcp.json`。
+
 ## 登入與重新登入
 
 安裝 0.1.4 後可直接說「登入 TDNA」或「重新登入 TDNA，我要切換帳號」。AI 會檢查連線，並引導客戶端的 OAuth 登入。授權頁帳號不符時，按「重新登入／切換帳號」，登入後接續同一授權流程。完成後以 `whoami` 核對帳號，才算 MCP 連線成功。
@@ -52,7 +63,7 @@ AI 判斷 TDNA 功能無法完成需求、資料不足或流程卡住時，會�
 
 ## 維護
 
-`plugins/tdna/.codex-plugin/plugin.json` 是 plugin manifest；`.mcp.json` 只包含服務網址，OAuth 憑證由客戶端管理。Skill 與品牌圖皆位於 plugin 內。
+`plugins/tdna/.codex-plugin/plugin.json` 是 Codex 的 plugin manifest，`plugins/tdna/.claude-plugin/plugin.json` 與根目錄 `.claude-plugin/marketplace.json` 是 Claude Code 的對應檔，兩者版本號需同步；`.mcp.json` 只包含服務網址，OAuth 憑證由客戶端管理。Skill 與品牌圖皆位於 plugin 內。
 
 日常功能與修正在固定的遠端 MCP 網址 `https://console.dna.org.tw/mcp` 部署，既有工具的伺服器端更新不需要使用者下載或重新安裝 plugin。維持網址與既有工具介面相容；新增工具可能需要重新連線或開新對話，依客戶端重新取得工具清單的時機而定。
 
