@@ -45,7 +45,7 @@ CLI 可用 `codex plugin marketplace add dna-org-tw/tdna-plugins` 加入來源�
 
 新對話輸入：「使用 TDNA 呼叫 whoami，確認我的角色；再列出可用的協會資料查詢功能，不修改資料。」
 
-確認有實際 tool call，且回應 `via` 為 `oauth`。也可查詢 ehrsnet 報帳進度，比對同一筆申請編號；沒有可見單據時清單可為空。
+確認有實際 tool call，且回應 `via` 為 `oauth`。也可查詢報帳進度，比對同一筆申請編號；沒有可見單據時清單可為空。
 
 需要中斷連線時，登入 [TDNA 後台](https://console.dna.org.tw/?page=mcp)，到「MCP 金鑰」撤銷該連線。撤銷後再次呼叫應要求重新授權。
 
